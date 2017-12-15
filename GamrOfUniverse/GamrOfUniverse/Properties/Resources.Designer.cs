@@ -59,15 +59,5 @@ namespace GamrOfUniverse.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
-        /// </summary>
-        internal static System.Drawing.Bitmap _540616main_pia00452_43_full {
-            get {
-                object obj = ResourceManager.GetObject("540616main_pia00452-43_full", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

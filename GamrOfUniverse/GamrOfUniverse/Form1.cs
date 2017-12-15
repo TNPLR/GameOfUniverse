@@ -16,5 +16,10 @@ namespace GamrOfUniverse
         {
             InitializeComponent();
         }
+
+        private void QuitGame_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
