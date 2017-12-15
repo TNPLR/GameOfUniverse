@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.StartGame = new System.Windows.Forms.Button();
             this.QuitGame = new System.Windows.Forms.Button();
+            this.Copyright = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // StartGame
@@ -42,6 +43,7 @@
             this.StartGame.TabIndex = 0;
             this.StartGame.Text = "Start Game";
             this.StartGame.UseVisualStyleBackColor = true;
+            this.StartGame.Click += new System.EventHandler(this.StartGame_Click);
             // 
             // QuitGame
             // 
@@ -54,17 +56,31 @@
             this.QuitGame.UseVisualStyleBackColor = true;
             this.QuitGame.Click += new System.EventHandler(this.QuitGame_Click);
             // 
+            // Copyright
+            // 
+            this.Copyright.AutoSize = true;
+            this.Copyright.BackColor = System.Drawing.Color.Transparent;
+            this.Copyright.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Copyright.ForeColor = System.Drawing.SystemColors.Menu;
+            this.Copyright.Location = new System.Drawing.Point(1146, 646);
+            this.Copyright.Name = "Copyright";
+            this.Copyright.Size = new System.Drawing.Size(106, 27);
+            this.Copyright.TabIndex = 2;
+            this.Copyright.Text = "GNU v3.0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1264, 682);
+            this.Controls.Add(this.Copyright);
             this.Controls.Add(this.QuitGame);
             this.Controls.Add(this.StartGame);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Game of Universe";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -72,6 +88,7 @@
 
         private System.Windows.Forms.Button StartGame;
         private System.Windows.Forms.Button QuitGame;
+        private System.Windows.Forms.Label Copyright;
     }
 }
 

@@ -82,5 +82,11 @@
   <ItemGroup>
     <None Include="GameOfUniverse.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="GameOfUniverse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="You_won.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
