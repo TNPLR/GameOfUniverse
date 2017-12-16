@@ -88,5 +88,14 @@
   <ItemGroup>
     <None Include="You_won.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="VoyagerEarthGameStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MapOfChinaTaiwan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MapOfChinaTaiwanFull.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.components = new System.ComponentModel.Container();
             this.StartGame = new System.Windows.Forms.Button();
             this.QuitGame = new System.Windows.Forms.Button();
             this.Copyright = new System.Windows.Forms.Label();
+            this.CheckMouseHover = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // StartGame
             // 
             this.StartGame.Font = new System.Drawing.Font("微軟正黑體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.StartGame.Location = new System.Drawing.Point(138, 93);
+            this.StartGame.Location = new System.Drawing.Point(117, 26);
             this.StartGame.Name = "StartGame";
             this.StartGame.Size = new System.Drawing.Size(388, 114);
             this.StartGame.TabIndex = 0;
@@ -48,7 +49,7 @@
             // QuitGame
             // 
             this.QuitGame.Font = new System.Drawing.Font("微軟正黑體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.QuitGame.Location = new System.Drawing.Point(138, 236);
+            this.QuitGame.Location = new System.Drawing.Point(117, 161);
             this.QuitGame.Name = "QuitGame";
             this.QuitGame.Size = new System.Drawing.Size(388, 114);
             this.QuitGame.TabIndex = 1;
@@ -58,6 +59,7 @@
             // 
             // Copyright
             // 
+            this.Copyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Copyright.AutoSize = true;
             this.Copyright.BackColor = System.Drawing.Color.Transparent;
             this.Copyright.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -68,17 +70,26 @@
             this.Copyright.TabIndex = 2;
             this.Copyright.Text = "GNU v3.0";
             // 
+            // CheckMouseHover
+            // 
+            this.CheckMouseHover.Interval = 3000;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::GamrOfUniverse.Properties.Resources.VoyagerEarthGameStart;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 682);
             this.Controls.Add(this.Copyright);
             this.Controls.Add(this.QuitGame);
             this.Controls.Add(this.StartGame);
             this.Name = "Form1";
             this.Text = "Game of Universe";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,6 +100,7 @@
         private System.Windows.Forms.Button StartGame;
         private System.Windows.Forms.Button QuitGame;
         private System.Windows.Forms.Label Copyright;
+        private System.Windows.Forms.Timer CheckMouseHover;
     }
 }
 

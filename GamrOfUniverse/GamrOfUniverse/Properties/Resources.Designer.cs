@@ -73,6 +73,36 @@ namespace GamrOfUniverse.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap MapOfChinaTaiwan {
+            get {
+                object obj = ResourceManager.GetObject("MapOfChinaTaiwan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MapOfChinaTaiwanFull {
+            get {
+                object obj = ResourceManager.GetObject("MapOfChinaTaiwanFull", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap VoyagerEarthGameStart {
+            get {
+                object obj = ResourceManager.GetObject("VoyagerEarthGameStart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap You_won {
             get {
                 object obj = ResourceManager.GetObject("You_won", resourceCulture);
